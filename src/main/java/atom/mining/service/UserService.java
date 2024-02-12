@@ -19,7 +19,7 @@ public class UserService {
     }
 
     public User updateUser() {
-        return userCRUD.updateUser().orElseThrow(new Exception("user not updated"));
+        return userCRUD.updateUser().orElseThrow(new Exception("user not updated")); // 16
     }
 
     public void delete() {

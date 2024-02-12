@@ -15,7 +15,7 @@ public class Main {
     }
 
     private void start() throws IOException {
-        try (var bs = new ByteArrayInputStream(new byte[10])) {
+        try (var bs = new ByteArrayInputStream(new byte[10])) { // 14
             System.out.println("Test create User");
             service.createUser("all");
             System.out.println("User created: " + service.getUser());
@@ -31,6 +31,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        new Main(new UserService(new UserCRUD())).start();
+        new Main(new UserService(new UserCRUD())).start(); // 15
     }
 }

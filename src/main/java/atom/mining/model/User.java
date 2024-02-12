@@ -14,14 +14,14 @@ public class User {
         this.role = role;
     }
 
-    public User(int age, boolean isLock, String role) {
+    public User(int age, boolean isLock, String role) { // 8
         this.age = age;
         this.isLock = isLock;
         this.role = role;
     }
 
     public User(String username) {
-        throw new UnsupportedOperationException("Not valid");
+        throw new UnsupportedOperationException("Not valid"); // 8
     }
 
 

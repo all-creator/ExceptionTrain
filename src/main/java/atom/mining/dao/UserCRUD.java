@@ -17,15 +17,15 @@ public class UserCRUD {
     }
 
     public void getUser() { // 11
-        throw new ErrorEcxeption("User not found")
+        throw new ErrorEcxeption("User not found"); // 7
     }
 
-    public Optional<User> updateUser() {
-        return new User("")
+    public Optional<User> updateUser() { // 12
+        return new User(""); // 15
     }
 
-    public void delete() {
-        throw UserException
+    public void delete() { //13
+        throw UserException; // 6
     }
 
 }
