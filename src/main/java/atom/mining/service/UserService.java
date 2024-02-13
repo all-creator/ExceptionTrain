@@ -19,7 +19,8 @@ public class UserService {
     }
 
     public User updateUser() {
-        return userCRUD.updateUser().orElseThrow(new Exception("user not updated")); // 16
+        return userCRUD.updateUser().orElseThrow(new Exception("user not updated")); // 16 Exception следует заменить на UserException
+        // имплементирующую java.util.function.Supplier<T> через SomeException или напрямую в случае решения об удалении SomeException.
     }
 
     public void delete() {

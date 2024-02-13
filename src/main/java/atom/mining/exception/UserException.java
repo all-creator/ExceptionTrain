@@ -1,6 +1,8 @@
 package atom.mining.exception;
 
-public class UserException extends SomeException {// 4 useless
+import java.util.function.Supplier;
+
+public class UserException extends SomeException {
     public UserException(String message) {
         super(message);
     }

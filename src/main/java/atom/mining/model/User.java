@@ -14,14 +14,14 @@ public class User {
         this.role = role;
     }
 
-    public User(int age, boolean isLock, String role) { // 8
+    public User(int age, boolean isLock, String role) { // 8 конструктор нужно либо удалить, либо пометить как throw new UnsupportedOperationException();
         this.age = age;
         this.isLock = isLock;
         this.role = role;
     }
 
     public User(String username) {
-        throw new UnsupportedOperationException("Not valid"); // 8
+        throw new UnsupportedOperationException("Not valid"); // 8 Конструктор должен создавать пользователя.
     }
 
 
